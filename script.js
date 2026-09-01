@@ -1,4 +1,3 @@
-</> JavaScript 
 const stories = [
   ["Politics", "The stories shaping the public conversation."],
   ["Governance", "What government decisions mean for communities."],
