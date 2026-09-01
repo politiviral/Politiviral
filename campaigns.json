@@ -1,0 +1,14 @@
+{
+  "campaigns": [
+    {
+      "title": "Campaign tracker",
+      "status": "active",
+      "description": "Verified public campaign information."
+    },
+    {
+      "title": "Election watch",
+      "status": "upcoming",
+      "description": "Election dates, events and public updates."
+    }
+  ]
+}
