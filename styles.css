@@ -264,6 +264,34 @@ footer strong span {
   .wrap {
     width: 90%;
   }
+  @media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background: #0b0f14;
+    border-top: 1px solid #252b33;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 0;
+  }
+
+  .site-header .nav {
+    position: relative;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+}
 
   .brand {
     font-size: 1.25rem;
