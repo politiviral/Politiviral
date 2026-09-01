@@ -3,9 +3,12 @@ const stories=[
   ["Governance","What government decisions mean for people","Turn complex announcements into concise, useful explanations."],
   ["People","Voices, reactions and the issues that matter","Highlight perspectives from citizens, communities and public figures."]
 ];
-const campaigns=[
-  ["Campaign tracker","Track public campaign information","Connect verified campaign data, dates and public updates as the platform grows."],
-  ["Election watch","Follow election developments","A dedicated space for candidates, events and verified public information."]
+let campaigns=[
+  {
+    title:"Sabon Campaign",
+    status:"upcoming",
+    description:"Bayanin campaign"
+  }
 ];
 const make=items=>items.map(x=>`<article class="card"><b>${x[0]}</b><h3>${x[1]}</h3><p>${x[2]}</p></article>`).join("");
 document.querySelector("#stories").innerHTML=make(stories);
