@@ -1,6 +1,10 @@
 {
   "campaigns": [
-    {
+    {    
+      "title": "New campaign",
+      "status": "upcoming",
+      "description": "Campaign description here"
+    },
       "title": "Campaign tracker",
       "status": "active",
       "description": "Verified public campaign information."
