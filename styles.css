@@ -1,243 +1,53 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0f14;
-  color: #f5f7fa;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font: inherit;
-}
-
-.wrap {
-  width: min(1120px, 92%);
-  margin: 0 auto;
-}
-
-.site-header {
-  border-bottom: 1px solid #252d35;
-}
-
-.nav {
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.brand {
-  color: #ff7959;
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-links a {
-  font-weight: 700;
-  color: #f5f7fa;
-}
-
-.nav-links a:hover {
-  color: #ff7959;
-}
-
-.menu {
-  display: none;
-  border: 0;
-  background: transparent;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-main {
-  overflow: hidden;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.eyebrow {
-  color: #ff7959;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.section h1,
-.section h2 {
-  margin-top: 12px;
-}
-
-.section h1 {
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 1.05;
-  max-width: 900px;
-}
-
-.section h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.1;
-}
-
-.section p {
-  max-width: 760px;
-  font-size: 1.15rem;
-}
-
-.section-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.live {
-  color: #ff7959;
-  font-weight: 700;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.grid article {
-  padding: 28px;
-  border: 1px solid #252d35;
-  border-radius: 16px;
-  background: #10151c;
-}
-
-.about {
-  border-top: 1px solid #252d35;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
-
-.muted {
-  color: #b8c0ca;
-}
-
-.large {
-  font-size: 1.25rem;
-}
-
-.text-link {
-  color: #ff7959;
-  font-weight: 700;
-}
-
-footer {
-  border-top: 1px solid #252d35;
-  padding: 35px 0;
-}
-
-.footer-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-footer strong {
-  color: #ff7959;
-}
+/* FINAL MOBILE HEADER FIX */
 
 @media (max-width: 700px) {
-  .wrap {
-    width: calc(100% - 32px);
+
+  .site-header .nav {
+    position: relative !important;
+    min-height: 76px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
   }
 
-  .nav {
-    min-height: 76px;
+  .brand {
+    display: block !important;
+    font-size: 1.6rem !important;
+    margin: 0 !important;
   }
 
   .menu {
-    display: block;
+    display: block !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    z-index: 20 !important;
   }
 
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 15px 16px;
-    background: #0b0f14;
-    border-bottom: 1px solid #252d35;
+    display: none !important;
+    position: absolute !important;
+    top: 76px !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 15 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding: 12px 16px !important;
+    background: #0b0f14 !important;
+    border-bottom: 1px solid #252d35 !important;
   }
 
   .nav-links.open {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-links a {
-    width: 100%;
-    padding: 14px 0;
-  }
-
-  .section {
-    padding: 55px 0;
-  }
-
-  .section h1 {
-    font-size: 3rem;
-  }
-
-  .section h2 {
-    font-size: 2.2rem;
-  }
-
-  .section p {
-    font-size: 1rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .section-head {
-    display: block;
-  }
-
-  .footer-grid {
-    display: block;
+    width: 100% !important;
+    padding: 14px 0 !important;
   }
 }
