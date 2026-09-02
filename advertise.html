@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Advertise with Politiviral.">
+<title>Advertise With Us — Politiviral</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.pricing .card{min-height:0}.price{font-size:2rem;font-weight:900;letter-spacing:-.04em;margin:18px 0 8px}.price-note{color:#8491a5;font-size:.85rem;margin-bottom:18px}.card ul{color:#9eabbd;padding-left:20px;margin:18px 0 0}.card li{margin:8px 0}.notice{margin-top:24px;padding:18px 20px;border:1px solid #263349;border-radius:14px;background:#0e1522;color:#9eabbd}.notice strong{color:#fff}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap nav">
+<a class="brand" href="index.html">Politiviral<span>.</span></a>
+<button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav class="nav-links">
+<a href="index.html#latest">Latest</a><a href="index.html#trending">Trending</a><a href="index.html#campaigns">Campaigns</a><a href="index.html#about">About</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero wrap">
+<div class="hero-copy">
+<p class="eyebrow">ADVERTISE WITH US</p>
+<h1>Put your message<br><em>in the right place.</em></h1>
+<p class="lead">Reach people interested in political news, public affairs and community conversations through clearly labelled listings and sponsorship opportunities on Politiviral.</p>
+<div class="actions"><a class="btn primary" href="#packages">View packages</a><a class="btn ghost" href="mailto:advertise@politiviral.com">Contact us</a></div>
+<div class="trust-row"><span>✓ Clear pricing</span><span>✓ Sponsored content labelled</span></div>
+</div>
+<div class="hero-panel">
+<div class="panel-top"><span>POLITIVIRAL</span><span class="dot">●</span></div>
+<div class="signal"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<h2>Be visible.<br>Be transparent.</h2>
+<p>Simple advertising options for candidates, organisations and public-interest campaigns.</p>
+</div>
+</section>
+
+<section id="packages" class="section wrap pricing">
+<p class="eyebrow">PACKAGES</p>
+<div class="section-head"><h2>Choose your placement</h2><span class="count">03 OPTIONS</span></div>
+<div class="grid">
+
+<article class="card">
+<b>BASIC LISTING</b><div class="price">₦20,000</div><div class="price-note">Per listing</div>
+<p>A simple public-facing listing for a candidate, organisation or campaign.</p>
+<ul><li>Campaign or organisation name</li><li>Short description</li><li>Contact or website link</li><li>Clearly marked sponsored placement</li></ul>
+</article>
+
+<article class="card">
+<b>FEATURED CAMPAIGN</b><div class="price">₦50,000</div><div class="price-note">Per campaign</div>
+<p>More prominent placement for campaigns that want additional visibility.</p>
+<ul><li>Everything in Basic Listing</li><li>Featured position</li><li>Campaign image/logo</li><li>Clearly marked sponsored placement</li></ul>
+</article>
+
+<article class="card">
+<b>HOMEPAGE SPONSORSHIP</b><div class="price">₦100,000</div><div class="price-note">Per sponsorship period</div>
+<p>High-visibility sponsorship placement on the Politiviral homepage.</p>
+<ul><li>Prominent homepage placement</li><li>Brand/campaign information</li><li>Link to your chosen public page</li><li>Clearly marked advertisement</li></ul>
+</article>
+</div>
+
+<div class="notice"><strong>Transparency matters:</strong> Paid placements will be clearly identified as <strong>Sponsored</strong> or <strong>Advertisement</strong>. Placement does not imply endorsement by Politiviral.</div>
+</section>
+
+<section class="section band">
+<div class="wrap about-grid">
+<div><p class="eyebrow">HOW IT WORKS</p><h2>Simple from start to finish.</h2></div>
+<div><p class="muted large">Choose a package, provide your public campaign or organisation details, complete payment, and submit your listing for review before publication.</p><a class="btn primary" href="mailto:advertise@politiviral.com">Get Started →</a></div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap footer-grid"><strong>Politiviral<span>.</span></strong><span>© <span id="year"></span> Politiviral</span></div></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const menu=document.querySelector(".menu"),nav=document.querySelector(".nav");
+if(menu)menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",open)});
+</script>
+</body>
+</html>
