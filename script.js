@@ -110,3 +110,39 @@ if (nav && menu) {
     });
   });
 }
+async function loadHomepageStories() {
+  let allStories = [...stories];
+
+  try {
+    const response = await fetch("/api/stories");
+
+    if (response.ok) {
+      const adminStories = await response.json();
+
+      if (Array.isArray(adminStories)) {
+        allStories = [...adminStories, ...stories];
+      }
+    }
+  } catch (error) {
+    console.error("Could not load admin stories:", error);
+  }
+
+  const storiesBox = document.querySelector("#stories");
+
+  if (storiesBox) {
+    storiesBox.innerHTML = allStories
+      .map(
+        story => `
+        <article>
+          ${story.image ? `<img src="${story.image}" alt="${story.title}">` : ""}
+          <small>${story.category}</small>
+          <h3>${story.title}</h3>
+          <p>${story.description}</p>
+        </article>
+        `
+      )
+      .join("");
+  }
+}
+
+loadHomepageStories();
