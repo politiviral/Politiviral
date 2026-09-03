@@ -16,6 +16,7 @@ const stories = [
       <p>Politiviral an tsara shi domin samar da bayanai masu amfani da saukin fahimta ga jama'a.</p>`,
     image: "markup_14498.jpg"
   },
+  {
     category: "Governance",
     title: "What government decisions mean",
     description:
