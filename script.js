@@ -1,10 +1,10 @@
 const stories = [
   {
   category: "Featured",
-  title: "Mukhtar Ahmad Muhammad: Labarin Mutumin da Ya Ƙirƙiri Politiviral",
-  description:
-    "Daga Bauchi, Mukhtar Ahmad Muhammad ya ƙirƙiri Politiviral domin samar da ingantaccen dandali na siyasa, al'umma da bayanan jama'a.",
-  image: "markup_14498.jpg"
+title: "Mukhtar Ahmad Muhammad: Labarin Mutumin da Ya Ƙirƙiri Politiviral",
+description:
+  "Mukhtar Ahmad Muhammad an haife shi a Bauchi. Ya kammala HND a Estate Management and Valuation a Abubakar Tatari Ali Polytechnic Bauchi. Yana da sha'awar bincike kan ilimi, halayyar ɗan Adam da al'amuran yau da kullum. Haka kuma yana rubuta littattafan Hausa da novels. Daga wannan sha'awa da burin samar da ingantaccen wuri na bayanai ne ya ƙirƙiri Politiviral — dandalin da ke kawo labaran siyasa, bayanan jama'a, batutuwan al'umma da sauran abubuwan da suka shafi rayuwar jama'a.",
+image: "markup_14498.jpg"
 },
   {
     category: "Governance",
