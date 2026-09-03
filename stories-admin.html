@@ -190,6 +190,32 @@ document.querySelector("button").addEventListener("click", async () => {
     alert("Server error. Please try again.");
   }
 });
+  async function loadStories() {
+  try {
+    const response = await fetch("/api/stories");
+    const stories = await response.json();
+
+    const list = document.getElementById("stories-list");
+
+    if (!stories.length) {
+      list.innerHTML = "<p>No stories yet.</p>";
+      return;
+    }
+
+    list.innerHTML = stories.map(story => `
+      <div style="padding:20px 0;border-bottom:1px solid #333;">
+        <small>${story.category}</small>
+        <h3>${story.title}</h3>
+        <p>${story.description}</p>
+      </div>
+    `).join("");
+
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+loadStories();
 </script>
 </body>
 </html>
