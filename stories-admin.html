@@ -148,6 +148,50 @@ button,
   <a class="back" href="/admin">← Back to Admin Dashboard</a>
 
 </main>
+<script>
+document.querySelector("button").addEventListener("click", async () => {
+  const title = document.getElementById("title").value.trim();
+  const category = document.getElementById("category").value;
+  const description = document.getElementById("description").value.trim();
+  const image = document.getElementById("image").value.trim();
 
+  if (!title || !description) {
+    alert("Please enter the story title and description.");
+    return;
+  }
+
+  try {
+    const response = await fetch("/api/stories", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title,
+        category,
+        description,
+        image
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data.message || "Failed to save story.");
+      return;
+    }
+
+    alert("Story saved successfully!");
+
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("image").value = "";
+    document.getElementById("category").value = "Featured";
+
+  } catch (error) {
+    alert("Server error. Please try again.");
+  }
+});
+</script>
 </body>
 </html>
