@@ -1,10 +1,11 @@
 const stories = [
   {
-    category: "Politics",
-    title: "Understanding the public conversation",
-    description:
-      "A clear look at political issues, public debates and the questions communities are asking."
-  },
+  category: "Featured",
+  title: "Mukhtar Ahmad Muhammad: Labarin Mutumin da Ya Ƙirƙiri Politiviral",
+  description:
+    "Daga Bauchi, Mukhtar Ahmad Muhammad ya ƙirƙiri Politiviral domin samar da ingantaccen dandali na siyasa, al'umma da bayanan jama'a.",
+  image: "markup_14498.jpg"
+},
   {
     category: "Governance",
     title: "What government decisions mean",
@@ -53,10 +54,11 @@ if (storiesBox) {
     .map(
       story => `
         <article>
-          <small>${story.category}</small>
-          <h3>${story.title}</h3>
-          <p>${story.description}</p>
-        </article>
+  ${story.image ? `<img src="${story.image}" alt="${story.title}">` : ""}
+  <small>${story.category}</small>
+  <h3>${story.title}</h3>
+  <p>${story.description}</p>
+</article>
       `
     )
     .join("");
