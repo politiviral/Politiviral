@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories Admin - Politiviral</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #fff;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 1px solid #252b33;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  color: #aeb6c0;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
+}
+
+.card {
+  background: #111720;
+  border: 1px solid #29313b;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #dce2e8;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #39424d;
+  background: #0b0f14;
+  color: #fff;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button,
+.back {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #ff735c;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back {
+  background: #29313b;
+  margin-right: 8px;
+}
+
+.note {
+  color: #9da7b2;
+  line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📰 Stories Admin</h1>
+  <p>Manage political and community stories.</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Add New Story</h2>
+
+    <p class="note">
+      Use this section to prepare a new story for Politiviral.
+    </p>
+
+    <label for="title">Story Title</label>
+    <input id="title" type="text" placeholder="Enter story title">
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option value="Featured">Featured</option>
+      <option value="Governance">Governance</option>
+      <option value="People">People</option>
+      <option value="Civic Life">Civic Life</option>
+      <option value="Politics">Politics</option>
+      <option value="Community">Community</option>
+    </select>
+
+    <label for="description">Story Description</label>
+    <textarea id="description" placeholder="Enter story description"></textarea>
+
+    <label for="image">Image URL</label>
+    <input id="image" type="text" placeholder="Optional image filename or URL">
+
+    <button type="button">Save Story</button>
+  </div>
+
+  <div class="card">
+    <h2>Existing Stories</h2>
+
+    <p class="note">
+      Existing stories will appear here when story management is connected.
+    </p>
+  </div>
+
+  <a class="back" href="/admin">← Back to Admin Dashboard</a>
+
+</main>
+
+</body>
+</html>
