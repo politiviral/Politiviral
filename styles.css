@@ -351,3 +351,61 @@ footer {
     height: 240px;
   }
 }
+/* AUTHOR / ABOUT CARD */
+.about-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.about-photo {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-content {
+  min-width: 0;
+}
+
+.about-content .eyebrow {
+  margin-bottom: 8px;
+}
+
+.about-content h2 {
+  margin: 0 0 16px;
+}
+
+.about-content h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.about-content p {
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 300px;
+  }
+}
