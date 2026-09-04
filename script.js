@@ -6,27 +6,22 @@ const stories = [
   time: "8:00 PM",
   image: "latest-news.jpg",
   description: `
-    <h4>🔥 Sabon Labari</h4>
+    <h4>🔥 Me ke faruwa?</h4>
     <p>
-      Wannan shi ne wajen da za a rika saka sabbin labarai
-      masu muhimmanci a Politiviral.
+      Wannan shi ne sabon labari da Politiviral ke kawo wa masu karatu.
+      Za a riƙa sabunta wannan sashe da sahihin bayani da zarar an samu.
     </p>
 
-    <h4>Me ke faruwa?</h4>
+    <h4>📰 Sabon Bayani</h4>
     <p>
-      Za mu rika sabunta wannan sashe da sahihan bayanai,
-      hotuna da cikakken bayani kan abin da ke faruwa.
+      Da zarar an samu sabon bayani, za a saka cikakken bayani
+      tare da hoton labarin a nan.
     </p>
 
-    <h4>Sabon Bayani</h4>
-    <p>
-      Da zarar an samu sabon bayani, za a sabunta labarin
-      domin masu karatu su samu bayanin da ya fi dacewa.
-    </p>
-
-    <p><strong>Lokaci:</strong> 4 September 2026 — 8:00 PM</p>
+    <p><strong>Lokaci:</strong> 4 September 2026 • 8:00 PM</p>
   `
 },
+  
   {
     category: "Featured",
     title: "Mukhtar Ahmad Muhammad: Labarin Mutumin da Ya Kirkiro Politiviral",
