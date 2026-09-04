@@ -1,16 +1,30 @@
 const stories = [
   {
   category: "Latest",
-  title: "Sabon Zazzafan Update",
+  title: "BREAKING: Sabon Labari na Politiviral",
+  date: "4 September 2026",
+  time: "8:00 PM",
+  image: "latest-news.jpg",
   description: `
-    <h4>Sabon Labari</h4>
-    <p>Wannan shi ne sabon update na Politiviral. Za mu rika saka sabbin labarai da abubuwan da ke faruwa a nan.</p>
+    <h4>🔥 Sabon Labari</h4>
+    <p>
+      Wannan shi ne wajen da za a rika saka sabbin labarai
+      masu muhimmanci a Politiviral.
+    </p>
 
     <h4>Me ke faruwa?</h4>
-    <p>Za a sabunta wannan sashe da sabon bayani, labari ko muhimmin update.</p>
+    <p>
+      Za mu rika sabunta wannan sashe da sahihan bayanai,
+      hotuna da cikakken bayani kan abin da ke faruwa.
+    </p>
 
-    <h4>Politiviral Update</h4>
-    <p>Ku ci gaba da bibiyar Politiviral domin samun sabbin bayanai.</p>
+    <h4>Sabon Bayani</h4>
+    <p>
+      Da zarar an samu sabon bayani, za a sabunta labarin
+      domin masu karatu su samu bayanin da ya fi dacewa.
+    </p>
+
+    <p><strong>Lokaci:</strong> 4 September 2026 — 8:00 PM</p>
   `
 },
   {
