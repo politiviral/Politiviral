@@ -479,3 +479,27 @@ footer {
     line-height: 1.6;
   }
 }
+@media (max-width: 600px) {
+  .site-header {
+    padding: 20px 16px !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .hero {
+    padding: 40px 20px 50px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .hero h1 {
+    font-size: 3rem !important;
+    line-height: 1.05 !important;
+    margin-top: 20px !important;
+  }
+
+  .hero p {
+    font-size: 1.1rem !important;
+  }
+}
