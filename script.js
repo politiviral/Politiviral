@@ -1,5 +1,19 @@
 const stories = [
   {
+  category: "Latest",
+  title: "Sabon Zazzafan Update",
+  description: `
+    <h4>Sabon Labari</h4>
+    <p>Wannan shi ne sabon update na Politiviral. Za mu rika saka sabbin labarai da abubuwan da ke faruwa a nan.</p>
+
+    <h4>Me ke faruwa?</h4>
+    <p>Za a sabunta wannan sashe da sabon bayani, labari ko muhimmin update.</p>
+
+    <h4>Politiviral Update</h4>
+    <p>Ku ci gaba da bibiyar Politiviral domin samun sabbin bayanai.</p>
+  `
+},
+  {
     category: "Featured",
     title: "Mukhtar Ahmad Muhammad: Labarin Mutumin da Ya Kirkiro Politiviral",
     description:
