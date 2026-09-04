@@ -503,3 +503,25 @@ footer {
     font-size: 1.1rem !important;
   }
 }
+@media (max-width: 600px) {
+  .site-header {
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .nav {
+    min-height: 76px !important;
+  }
+
+  .hero {
+    padding: 20px 20px 50px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .hero-copy {
+    margin-top: 0 !important;
+  }
+}
