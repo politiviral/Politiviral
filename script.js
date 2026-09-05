@@ -185,7 +185,7 @@ function setLanguage(lang) {
     "Stay informed.": "Kasance cikin sani.",
     "Stay involved.": "Kasance cikin al'amuran jama'a.",
     "Public-interest focused": "Mai mayar da hankali kan amfanin jama'a",
-    "Clear & accessible": "Bayani mai sauƙin fahimta"
+    "Clear & accessible": "Bayani mai sauƙin fahimta",
     "AUTHOR": "MARUBUCI",
   };
 
