@@ -169,3 +169,73 @@ async function loadHomepageStories() {
 }
 
 loadHomepageStories();
+function setLanguage(lang) {
+  const translations = {
+    "Latest": "Sabbin Labarai",
+    "Trending": "Abubuwan Da Suka Shahara",
+    "Campaigns": "Kamfen",
+    "About": "Game da Mu",
+    "Advertise With Us": "Yi Talla Tare da Mu",
+    "Politics,": "Siyasa,",
+    "without the noise.": "ba tare da hayaniya ba.",
+    "A clear home for political stories, public-interest updates, campaign information and the conversations shaping communities.":
+      "Gida mai sauƙi don labaran siyasa, bayanan jama'a, bayanan kamfen da tattaunawar da ke tsara al'umma.",
+    "Explore latest": "Duba Sabbin Labarai",
+    "View campaigns": "Duba Kamfen",
+    "Stay informed.": "Kasance cikin sani.",
+    "Stay involved.": "Kasance cikin al'amuran jama'a.",
+    "Public-interest focused": "Mai mayar da hankali kan amfanin jama'a",
+    "Clear & accessible": "Bayani mai sauƙin fahimta"
+  };
+
+  const english = {
+    "Sabbin Labarai": "Latest",
+    "Abubuwan Da Suka Shahara": "Trending",
+    "Kamfen": "Campaigns",
+    "Game da Mu": "About",
+    "Yi Talla Tare da Mu": "Advertise With Us",
+    "Siyasa,": "Politics,",
+    "ba tare da hayaniya ba.": "without the noise.",
+    "Duba Sabbin Labarai": "Explore latest",
+    "Duba Kamfen": "View campaigns",
+    "Kasance cikin sani.": "Stay informed.",
+    "Kasance cikin al'amuran jama'a.": "Stay involved.",
+    "Mai mayar da hankali kan amfanin jama'a": "Public-interest focused",
+    "Bayani mai sauƙin fahimta": "Clear & accessible"
+  };
+
+  const dictionary = lang === "ha" ? translations : english;
+
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT
+  );
+
+  const nodes = [];
+  let node;
+
+  while (node = walker.nextNode()) {
+    nodes.push(node);
+  }
+
+  nodes.forEach(textNode => {
+    let text = textNode.nodeValue;
+
+    Object.keys(dictionary).forEach(key => {
+      if (text.includes(key)) {
+        text = text.split(key).join(dictionary[key]);
+      }
+    });
+
+    textNode.nodeValue = text;
+  });
+
+  localStorage.setItem("politiviral-language", lang);
+}
+
+const savedLanguage =
+  localStorage.getItem("politiviral-language") || "en";
+
+if (savedLanguage === "ha") {
+  setLanguage("ha");
+}
