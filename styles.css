@@ -534,3 +534,12 @@ footer {
   line-height: 1.2;
   letter-spacing: -0.5px;
 }
+/* Politiviral Featured Section Headings */
+.featured h4 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ff7058;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
