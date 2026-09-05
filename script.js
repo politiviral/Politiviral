@@ -235,7 +235,7 @@ function setLanguage(lang) {
 }
 
 const savedLanguage =
-  localStorage.getItem("politiviral-language") || "en";
+  localStorage.getItem("politiviral-language") || "ha";
 
 if (savedLanguage === "ha") {
   setLanguage("ha");
